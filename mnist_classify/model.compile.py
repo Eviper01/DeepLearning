@@ -21,6 +21,6 @@ model = tf.keras.models.Sequential([
 loss_fn = tf.keras.losses.CategoricalCrossentropy(from_logits=True)
 
 model.compile(optimizer='adam',loss=loss_fn,metrics=['accuracy'])
-model.fit(x_train, y_train, epochs=5)
+model.fit(x_train, y_train, epochs=5,batch_size=10000)
 model.evaluate(x_test,  y_test, verbose=2)
 model.save("out.h5")

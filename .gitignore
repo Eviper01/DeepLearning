@@ -1,3 +1,4 @@
 ignore
 dreams.npy
 test.py
+/mnist_draw/logs
